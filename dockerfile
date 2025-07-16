@@ -17,6 +17,6 @@ RUN pip install --upgrade pip cython==0.29.36
 RUN pip install buildozer
 
 COPY . /app
-COPY buildozer.spec .
+COPY buildozer.spec . # you will have to install buildozer on mac via homebrew then init -- , this will generate buildozer.spec
 
 CMD ["buildozer", "android", "debug"]
