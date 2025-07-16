@@ -1,9 +1,9 @@
 #!/bin/bash
 
-set -e
+APP_DIR=$(pwd)
 
-echo "📦 Building Docker image: kivy-attendance-app"
-docker build -t kivy-attendance-app .
-
-echo "🚀 Running Docker container to build APK..."
-docker run -it --rm -v "$PWD":/app kivy-attendance-app
+docker run --rm -it \
+  -v "$APP_DIR":/home/user/app \
+  -w /home/user/app \
+  kivy/buildozer \
+  buildozer android debug
