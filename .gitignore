@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Build artifacts
+build/
+bin/
+*.apk
+*.buildozer/
+dist/
+
+# macOS
+.DS_Store
+
+# Virtual environment
+venv/
+
+# Data file
+attendance_data.json
