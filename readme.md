@@ -1,4 +1,4 @@
-#  Kivy Attendance App (Offline Android Build)
+# Kivy Attendance App (Offline Android Build)
 
 This package contains everything needed to build the Kivy-based attendance register as an Android `.apk` using Docker — **fully offline**.
 
@@ -12,7 +12,7 @@ This package contains everything needed to build the Kivy-based attendance regis
 - Linux/macOS (or WSL on Windows)
   
 
-## 🔧 Usage
+## Usage
 
 ```bash
 ./build.sh
